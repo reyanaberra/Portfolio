@@ -12,7 +12,7 @@ class Samus(Sprite):
         self.screen_rect = mi_game.screen.get_rect()
 
         # Load the Samus image and gets its rect.
-        self.image = pygame.image.load("C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\images\\SamusCenter.png")
+        self.image = pygame.image.load("images\\SamusCenter.png")
         self.rect = self.image.get_rect()
 
         # Start each Samus at the bottom center of the screen.
@@ -34,10 +34,10 @@ class Samus(Sprite):
         """Update Samus's position based on the movement flags."""
         # Update Samus's x value, not the rect.
         if self.moving_right and not self.moving_left and self.rect.right < self.settings.screen_width:
-            self.image = pygame.image.load("C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\images\\SamusRight.png")
+            self.image = pygame.image.load("images\\SamusRight.png")
             self.x += self.settings.samus_speed
         if self.moving_left and not self.moving_right and self.rect.left > 0:
-            self.image = pygame.image.load("C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\images\\SamusLeft.png")
+            self.image = pygame.image.load("images\\SamusLeft.png")
             self.x -= self.settings.samus_speed
 
         self.rect = self.image.get_rect()
@@ -50,7 +50,7 @@ class Samus(Sprite):
 
     def center_samus(self):
         """Center Samus on the screen."""
-        self.image = pygame.image.load("C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\images\\SamusCenter.png")
+        self.image = pygame.image.load("images\\SamusCenter.png")
         self.look_right = False
         self.look_left = False
         self.moving_right = False
