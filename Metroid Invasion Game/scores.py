@@ -69,7 +69,7 @@ class Scores:
     def check_high_score(self):
         """Check to see if there's a new high score."""
         if self.stats.score > self.stats.high_score:
-            high_score_file = "C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\score.json"
+            high_score_file = "score.json"
             with open(high_score_file, "w") as hsf:
                 json.dump(self.stats.score, hsf)
             self.stats.high_score = self.stats.score
