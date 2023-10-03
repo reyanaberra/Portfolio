@@ -12,7 +12,7 @@ class Missile(Sprite):
         self.samus = mi_game.samus
 
         # Create a missile rect at (0, 0) and then set correct position.
-        self.image = pygame.image.load("C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\images\\SamusMissile.png")
+        self.image = pygame.image.load("images\\SamusMissile.png")
         self.rect = self.image.get_rect()
         if self.samus.look_right:
             self.rect.midbottom = (mi_game.samus.rect.x + 25, mi_game.samus.rect.y + 5)
