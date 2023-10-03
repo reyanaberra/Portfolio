@@ -12,7 +12,7 @@ class Stats:
         self.game_active = False
 
         # High score should never be reset.
-        high_score_file = "C:\\Users\\reyan\\Desktop\\Python Projects\\Metroid Invasion\\score.json"
+        high_score_file = "score.json"
         with open(high_score_file) as hsf:
             self.high_score = json.load(hsf)
 
